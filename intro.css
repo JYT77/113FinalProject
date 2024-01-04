@@ -1,0 +1,144 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #0e122d;
+  }
+
+
+.navbar {
+    width:100%; 
+    background-color: #04021d; 
+    overflow:hidden; 
+    position: fixed; 
+    top: 0; 
+    z-index: 1000;
+    padding-right: 80px;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between; 
+  }
+
+.page-title {
+    margin: 0;
+    color: rgb(229, 233, 251);
+    font-size: xx-large;
+}
+
+.nav-button {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: medium;
+    color: black; 
+    background-color: #f0f5ff; 
+    border-radius: 20px;
+    transition: background-color 0.3s;
+    margin-right: 5px;
+    height: min-content;
+    width: auto;
+}
+
+.nav-button:hover {
+    background-color: #1f2d52;
+    color: rgb(255, 255, 255);
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links .nav-button {
+    margin-left: 10px; 
+}
+
+.home-button img {
+    height: 60px; 
+    width: auto; 
+    vertical-align: middle; 
+}
+
+.container {
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    height: 100%;
+    margin-top: 30px;
+  }
+  
+  .content {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 10px;
+    display: flex;
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  
+
+  .rectangle-image {
+    display: block;
+    width: 30%;
+    height: auto;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    margin-top: 30px;
+    flex: 1; 
+    padding-right: 2dvb; 
+  }
+
+  .content-container {
+    flex: 1; 
+    font-size: large;
+    padding-left: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
+    align-self: center;
+}
+  
+footer {
+    text-align: center;
+    padding: 0px 0;
+    background-color: #ededed; 
+    color: #9c9c9c; 
+    position: fixed;
+    overflow: hidden;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 25px;
+    font-size: xx-small;
+  }
+
+  /* 現有的 CSS 樣式 */
+
+/* ... */
+
+/* 媒體查詢 */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .rectangle-image, .content-container {
+        width: 100%;
+        margin-top: 20px;
+        padding-right: 0; 
+    }
+
+    .content-container {
+        padding-left: 0;
+        text-align: center; 
+    }
+
+    .nav-button {
+        display: block;
+        margin: 5px auto; 
+    }
+}

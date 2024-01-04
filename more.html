@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More</title>
+    <link rel="stylesheet" type="text/css" href="more.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@400;700&display=swap');
+      </style>
+</head>
+<body>
+    <div class="content">
+        <p>Well, I think that's enough for test </p>
+        <p>ʅ（´◔౪◔）ʃ</p>
+
+        <button class="back-button" onclick="goBack()">Back</button>
+        <button class="continue-button" onclick="continueForward()">Continue</button>
+    </div>    
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+
+        function continueForward() {
+            window.location.href = 'continue.html';
+        }
+    </script>
+</body>
+</html>

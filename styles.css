@@ -1,0 +1,146 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+.container {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding-top: 80px;
+  margin-top: 5%;
+}
+
+.content {
+  background-color: white;
+  width: 80%;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin: 10px;
+}
+
+#home-button {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+#home-button img {
+  height: 60px; 
+  width: auto; 
+  vertical-align: middle; 
+}
+
+.navbar {
+  width: 100%;
+  height: 60px;
+  background-color: #04021d;
+  overflow: hidden; 
+  position:fixed; 
+  top: 0; 
+  z-index: 1000;
+  margin: auto;
+  display: flex; 
+  justify-content: space-between;
+}
+
+.nav-button {
+  padding: 14px 20px;
+  border: none;
+  background-color: #f0f0f0;
+  color: rgb(0, 0, 0);
+  text-align:center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 20px;
+  width: 50px;
+  height: min-content;
+  margin-left: 20px;
+}
+
+.nav-button:hover {
+  background-color: #1f2d52;
+  color: rgb(255, 255, 255);
+}
+
+.nav-buttons-right {
+  display: flex;
+  margin-left: auto; 
+  margin: 5px;
+}
+
+.rectangle-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  margin-top: 30px;
+
+}
+
+.content-container {
+  display: flex;
+  justify-content: space-between; 
+  padding: 20px;
+}
+
+.topic {
+  flex: 1; 
+  padding-right: 20px; 
+  font-size: larger;
+  border-right: 2px solid #f4ff27; 
+}
+.topic-description
+{
+font-size:smaller;
+}
+
+.description {
+  flex: 2; 
+  font-size: large;
+  padding-left: 30px;
+}
+
+.more-button {
+  display: inline-block;
+  margin-top: 0px;
+  padding: 5px 10px;
+  background-color: #e1e1e1;
+  color: #0e0f2d;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: background-color 0.3s;
+  font-size: smaller;
+}
+
+.more-button:hover {
+  background-color: #0e0f2d;
+  color: #ffffff;
+}
+
+footer {
+  text-align: center;
+  padding: 0px 0;
+  background-color: #ededed; 
+  color: #9c9c9c; 
+  position: fixed;
+  overflow: hidden;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 25px;
+  font-size: xx-small;
+}
+
+
+@media(max-width:768px) {
+  .content {
+    width: 95%;
+  }
+}
