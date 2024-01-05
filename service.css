@@ -110,11 +110,6 @@ footer {
     font-size: xx-small;
   }
 
-  /* 現有的 CSS 樣式 */
-
-/* ... */
-
-/* 媒體查詢 */
 @media screen and (max-width: 768px) {
     .container {
         flex-direction: column;
