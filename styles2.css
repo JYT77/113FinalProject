@@ -8,6 +8,7 @@ body {
 }
 .navbar {
     display: flex;
+    position: fixed;
     justify-content: space-between;
     align-items: center;
     background-color: #04021d; 
